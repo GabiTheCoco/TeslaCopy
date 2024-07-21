@@ -1,0 +1,21 @@
+---
+import TruckTitle from "./TruckTitle.astro"
+---
+
+<section class="h-screen text-center flex flex-col relative overflow-hidden landing-section" data-header-color="black">
+    <section class="absolute w-full h-full">
+        <img class="w-full h-full object-cover object-center" src="/img/CyberTruck.avif" alt="">
+    </section>
+
+    
+    <div class="z-10 flex justify-center pt-24">
+        <TruckTitle/>
+    </div>
+
+    <div class="flex flex-col flex-grow basis-0 justify-end z-10">
+        <div class="flex justify-center items-center gap-6 text-sm pb-28 font-bold bg-transparent">
+            <button class="bg-zinc-950 bg- text-zinc-500 py-[10px] px-20 hover:bg-zinc-900 border-t-2 border-zinc-500 transition-colors duration-300">ORDER NOW</button>
+            <button class="bg-zinc-950 text-zinc-500  py-[10px] px-20 hover:bg-zinc-900 bg-transparent transition-colors duration-300">LEARN MORE</button>
+        </div>
+    </div>
+</section>
